@@ -1,0 +1,34 @@
+{
+  "name": "matoken",
+  "version": "1.0.0",
+  "description": "MAT - Developer Contribute ERC20 Token",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maAPPsDEV/matoken.git"
+  },
+  "keywords": [
+    "ethereum",
+    "erc20",
+    "solidity"
+  ],
+  "author": "tony@maapps.dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maAPPsDEV/matoken/issues"
+  },
+  "homepage": "https://github.com/maAPPsDEV/matoken#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.3.0",
+    "ethers": "^5.3.1",
+    "hardhat": "^2.3.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.1.0"
+  }
+}
