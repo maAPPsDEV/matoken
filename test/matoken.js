@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("MAToken", function() {
+describe("MAToken", function () {
   let alice, bob;
   let mat;
 
@@ -12,7 +12,7 @@ describe("MAToken", function() {
     await mat.deployed();
   });
 
-  it("Should return the symbol", async function() {
+  it("Should return the symbol", async function () {
     expect(await mat.symbol()).to.equal("MAT");
   });
 

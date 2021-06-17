@@ -14,7 +14,7 @@ task("accounts", "Prints the list of accounts", async () => {
 // Go to https://hardhat.org/config/ to learn more
 
 const INFURA_PROJECT_ID = "e83a710ee610460882fc25ae775ecbee";
-const fs = require('fs');
+const fs = require("fs");
 const PRIVATE_KEY = fs.readFileSync(".secret").toString().trim();
 
 /**
@@ -23,12 +23,10 @@ const PRIVATE_KEY = fs.readFileSync(".secret").toString().trim();
 module.exports = {
   solidity: "0.8.5",
   networks: {
-    hardhat: {
-    },
+    hardhat: {},
     kovan: {
       url: `https://kovan.infura.io/v3/${INFURA_PROJECT_ID}`,
       accounts: [PRIVATE_KEY],
     },
   },
 };
-
