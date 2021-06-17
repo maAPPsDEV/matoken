@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "MAT - Developer Contribute ERC20 Token",
   "scripts": {
-    "test": "test"
+    "build": "hardhat compile",
+    "kovan:deploy": "hardhat --network kovan deploy",
+    "mainnet:deploy": "hardhat --network mainnet deploy",
+    "test": "hardhat test",
+    "prettier": "prettier --write .",
+    "lint": "yarn prettier && solhint -c .solhint.json contracts/**/*.sol"
   },
   "repository": {
     "type": "git",
@@ -26,7 +31,11 @@
     "chai": "^4.3.4",
     "ethereum-waffle": "^3.3.0",
     "ethers": "^5.3.1",
-    "hardhat": "^2.3.3"
+    "hardhat": "^2.3.3",
+    "prettier": "^2.3.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.13",
+    "solhint": "^3.3.6",
+    "solhint-plugin-prettier": "^0.0.5"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.1.0"
